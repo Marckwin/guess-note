@@ -8,3 +8,6 @@ The code then shuffles the placement of the notes and adds them to the buttons i
 Finally, it adds a "New Game" button that, when clicked, reloads the page to start a new game.
 
 The CSS styles are used to set the layout, colors, and fonts of the HTML elements.
+
+## SCREENSHOT
+![Keynote](https://github.com/Marckwin/guess-note/blob/main/Keynote.jpg)
