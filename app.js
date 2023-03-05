@@ -11,6 +11,7 @@ const keySignatures = {
 };
 const notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C#', 'D#', 'E', 'F#', 'G#', 'A#', 'B'];
 
+
 // Get a random key signature
 const randomKey = keys[Math.floor(Math.random() * keys.length)];
 const keySignature = keySignatures[randomKey];
@@ -49,12 +50,13 @@ buttons[0].textContent = shuffledNotes[0];
 buttons[1].textContent = shuffledNotes[1];
 buttons[2].textContent = shuffledNotes[2];
 
-// Add event listeners to the buttons
+const messageElement = document.getElementById('message');
+
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     if (button.textContent === correctNote) {
       button.classList.add('correct');
-      alert('Congratulations, you guessed the correct note!');
+      messageElement.textContent = 'Congratulations, you guessed the correct note!';
     } else {
       button.classList.add('incorrect');
       setTimeout(() => {
@@ -63,3 +65,17 @@ buttons.forEach(button => {
     }
   });
 });
+
+// Add a new game button
+const newGameButton = document.createElement('button');
+newGameButton.classList.add('note-button', 'new-game-button');
+newGameButton.textContent = 'New Game';
+const notesContainer = document.querySelector('.notes');
+notesContainer.insertAdjacentElement('afterend', newGameButton);
+
+// Add an event listener to the new game button
+newGameButton.addEventListener('click', () => {
+  // Reload the page to start a new game
+  location.reload();
+});
+
