@@ -1,0 +1,123 @@
+/* Body styles */
+body {
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Header styles */
+  h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 60px;
+  color: #555;
+  text-shadow: 2px 2px #eee;
+  }
+  
+  /* Score counter styles */
+  #score {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  color: #555;
+  text-shadow: 2px 2px #eee;
+  }
+  
+  /* Key signature styles */
+  #key-signature {
+    margin: 50px auto;
+    width: fit-content;
+    height: 100px;
+    background-color: #f39c12;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #c37c0d;
+  }
+  
+  
+  /* Notes styles */
+  #notes {
+  margin: 30px auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  #notes button {
+  width: 150px;
+  height: 150px;
+  background-color: #c0392b;
+  border: 4px solid #e74c3c;
+  border-radius: 50%;
+  font-size: 48px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px #96281b;
+  transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  #notes button:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+  text-shadow: 2px 2px #c0392b;
+  }
+  
+  /* Buttons styles */
+  button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  #new-game {
+  background-color: #27ae60;
+  }
+  
+  #new-game:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+  }
+  
+  #next-round {
+  background-color: #3498db;
+  }
+  
+  #next-round:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+  }
+  
+  /* Input styles */
+  input[type=text] {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #333;
+  width: 300px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+  }
+  
+  input[type=text]:focus {
+  border-color: #3498db;
+  }
